@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "335833024185",
+    "firebase_url": "https://diwali-wallpapers-app-3e363.firebaseio.com",
+    "project_id": "diwali-wallpapers-app-3e363",
+    "storage_bucket": "diwali-wallpapers-app-3e363.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:335833024185:android:8fd9414cb1cb44bde07d68",
+        "android_client_info": {
+          "package_name": "com.ashishapps.android.diwaliwallpapaers"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "335833024185-ab0ai952atkko85gbftrk25o44v5etcg.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.ashishapps.android.diwaliwallpapaers",
+            "certificate_hash": "d83123b41a816a8609f9a2e3d8eb7f5404d7487f"
+          }
+        },
+        {
+          "client_id": "335833024185-cecpibgiqlqpr236v4leluk24brj4g88.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCvYOATJfYZH0yLG_y9kXm6ylxL6hKEu48"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "335833024185-cecpibgiqlqpr236v4leluk24brj4g88.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
