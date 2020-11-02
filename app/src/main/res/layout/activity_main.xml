@@ -75,9 +75,10 @@
 
     <Button
         android:layout_width="match_parent"
-        android:layout_height="10dp"
+        android:layout_height="150dp"
         android:id="@+id/uploadbutton"
-        android:text="Upload"/>
+        android:text="Upload"
+        android:layout_gravity="center_horizontal"/>
 
 
 

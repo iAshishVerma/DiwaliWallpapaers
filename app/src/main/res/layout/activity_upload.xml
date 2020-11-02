@@ -8,8 +8,26 @@
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="choose file"
+        android:text="choose file di"
         android:id="@+id/choosefilebutton"/>
+
+    <Button
+        android:id="@+id/choosefilebutton2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_toEndOf="@+id/choosefilebutton"
+        android:text="choose file da"
+        android:layout_toRightOf="@+id/choosefilebutton" />
+
+    <Button
+        android:id="@+id/choosefilebutton3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        android:text="choose file ka"
+        android:layout_alignParentRight="true" />
     <ImageView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
