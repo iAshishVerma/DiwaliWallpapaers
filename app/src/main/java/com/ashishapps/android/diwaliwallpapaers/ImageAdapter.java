@@ -47,7 +47,7 @@ private StorageReference storageReference1=FirebaseStorage.getInstance().getRefe
     public void onBindViewHolder(@NonNull ImageViewHolder imageViewHolder, int i) {
             CardActivity currentCard=cardActivityList.get(i);
             //next line is important commented for test purpose
-     Picasso.get().load(currentCard.getImageurl()).fit().placeholder(R.mipmap.ic_launcher).centerCrop().into(imageViewHolder.imageView);
+     Picasso.get().load(currentCard.getImageurl()).fit().placeholder(R.drawable.ashishapps).centerCrop().into(imageViewHolder.imageView);
 //Picasso.get().load(String.valueOf(storageReference1)).into(imageViewHolder.imageView);
      // Glide.with(this).load(storageReference1).into(imageViewHolder.imageView);
 

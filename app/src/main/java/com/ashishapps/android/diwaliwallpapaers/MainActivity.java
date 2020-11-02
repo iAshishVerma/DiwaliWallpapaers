@@ -1,6 +1,9 @@
 package com.ashishapps.android.diwaliwallpapaers;
 
+import android.app.ActionBar;
 import android.content.Intent;
+import android.graphics.Color;
+import android.graphics.drawable.ColorDrawable;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -19,6 +22,12 @@ public class MainActivity extends AppCompatActivity {
         imageView1=findViewById(R.id.image1);
         imageView2=findViewById(R.id.image2);
         imageView3=findViewById(R.id.image3);
+      // Toolbar toolbar= getActionBar();
+     getSupportActionBar().setTitle("Wallpapers");
+    // getSupportActionBar().setBackgroundDrawable( new ColorDrawable(Color.parseColor("#1A000000")));
+      //  getSupportActionBar().setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));
+
+
 
         imageView1.setOnClickListener(new View.OnClickListener() {
             @Override

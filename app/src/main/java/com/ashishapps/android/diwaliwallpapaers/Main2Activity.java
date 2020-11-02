@@ -30,6 +30,7 @@ import com.google.firebase.storage.FirebaseStorage;
 import com.google.firebase.storage.StorageReference;
 
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.List;
 
 
@@ -41,6 +42,7 @@ public class Main2Activity extends AppCompatActivity implements ImageAdapter.OnI
     private FirebaseStorage storage2; // will be used to get link of image which is clicked
     private StorageReference storageReference;
     public String FolderName;
+    int position=0;
 
     //uploader activity is for uploading images to differernt folders and making the folder if they already do not exist
     //however the main2activiy and main3activity and main4activity are fetcher activity which are used to
@@ -79,6 +81,10 @@ public class Main2Activity extends AppCompatActivity implements ImageAdapter.OnI
     // using staggered layout
 StaggeredGridLayoutManager layoutManager= new StaggeredGridLayoutManager(2,StaggeredGridLayoutManager.VERTICAL);
 layoutManager.setGapStrategy(StaggeredGridLayoutManager.GAP_HANDLING_NONE);
+//
+        //layoutManager.setReverseLayout(true);//for this to work the image inflatation starts from end since i have 2 colums
+        //so upload images in the number which is the product of 2
+
 recyclerView.setLayoutManager(layoutManager);
 recyclerView.setHasFixedSize(true);
 
@@ -86,6 +92,8 @@ recyclerView.setHasFixedSize(true);
         /////////////////
         cardActivityList= new ArrayList<>();
         adapter= new ImageAdapter(Main2Activity.this,cardActivityList);
+        ////trying to revers the list
+      //  Collections.reverse(cardActivityList);
         recyclerView.setAdapter(adapter);
 
 ////////////
@@ -133,7 +141,7 @@ recyclerView.setHasFixedSize(true);
                     item.setDbkey(postSnapshot.getKey()); //this will extract the key of image in database
 
 
-                    cardActivityList.add(item);
+                    cardActivityList.add(position,item);//positon is 0 so the newly added image is added to the 0th position line 1of 3
                     Log.d("MeraLog", "Value is: " + item.toString());
 
 
@@ -142,9 +150,9 @@ recyclerView.setHasFixedSize(true);
                 ///
 //                adapter= new ImageAdapter(Main2Activity.this,cardActivityList);
 //                recyclerView.setAdapter(adapter);
+                   adapter.notifyItemInserted(position);//positon is 0 so the newly added image is added to the 0th position line2of 3
 
-
-                adapter.notifyDataSetChanged();
+                adapter.notifyDataSetChanged();//positon is 0 so the newly added image is added to the 0th positionline 3of 3
 
 
             }
@@ -169,7 +177,7 @@ public boolean onOptionsItemSelected(MenuItem item) {
 //////////////////////
     @Override
     public void onItemClick(int positon) {
-        Toast.makeText(this,"Normal Click at position"+positon,Toast.LENGTH_SHORT).show();
+       // Toast.makeText(this,"Normal Click at position"+positon,Toast.LENGTH_SHORT).show();
         CardActivity selectedItem =cardActivityList.get(positon);
         String url=selectedItem.getImageurl();
         Intent intent= new Intent(Main2Activity.this,ImageViewer.class);
