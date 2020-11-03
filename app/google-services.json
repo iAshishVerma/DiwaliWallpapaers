@@ -42,6 +42,35 @@
           ]
         }
       }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:335833024185:android:59b5fb4af658a2e3e07d68",
+        "android_client_info": {
+          "package_name": "com.ashishapps.android.diwaliwallpapaersclient"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "335833024185-cecpibgiqlqpr236v4leluk24brj4g88.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCvYOATJfYZH0yLG_y9kXm6ylxL6hKEu48"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "335833024185-cecpibgiqlqpr236v4leluk24brj4g88.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
     }
   ],
   "configuration_version": "1"

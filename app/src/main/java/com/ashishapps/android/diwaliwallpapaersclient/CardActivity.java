@@ -1,7 +1,4 @@
-package com.ashishapps.android.diwaliwallpapaers;
-
-import android.support.v7.app.AppCompatActivity;
-import android.os.Bundle;
+package com.ashishapps.android.diwaliwallpapaersclient;
 
 import com.google.firebase.database.Exclude;
 

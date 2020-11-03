@@ -1,4 +1,4 @@
-package com.ashishapps.android.diwaliwallpapaers;
+package com.ashishapps.android.diwaliwallpapaersclient;
 
 import android.content.Context;
 import android.support.test.InstrumentationRegistry;

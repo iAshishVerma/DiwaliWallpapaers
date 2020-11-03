@@ -1,4 +1,4 @@
-package com.ashishapps.android.diwaliwallpapaers;
+package com.ashishapps.android.diwaliwallpapaersclient;
 
 import org.junit.Test;
 

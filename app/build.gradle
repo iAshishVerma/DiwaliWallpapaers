@@ -3,7 +3,7 @@ apply plugin: 'com.android.application'
 android {
     compileSdkVersion 29
     defaultConfig {
-        applicationId "com.ashishapps.android.diwaliwallpapaers"
+        applicationId "com.ashishapps.android.diwaliwallpapaersclient"
         minSdkVersion 16 //15
         targetSdkVersion 29
         versionCode 1
@@ -48,6 +48,7 @@ dependencies {
 
     implementation 'com.joooonho:selectableroundedimageview:1.0.1'
     //implementation 'com.github.stfalcon:frescoimageviewer:0.5.0'
+    implementation 'com.google.android.gms:play-services-ads:11.8.0'
 }
 
 //apply plugin: 'com.google.gms.google-services'
